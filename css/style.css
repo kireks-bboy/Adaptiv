@@ -338,6 +338,47 @@ template {
   display: none;
 }
 
+
+@keyframes shake-bottom {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #010714;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1176px;
+  padding: 0 3%;
+  margin: 0 auto;
+}
+
 .button {
   font-family: "Open Sans", sans-serif;
   background-color: #3A68B8;
@@ -680,45 +721,7 @@ about__items-specialTwo {
   margin-right: 0;
 }
 
-@keyframes shake-bottom {
-  0%, 100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 100%;
-  }
-  10% {
-    transform: rotate(2deg);
-  }
-  20%, 40%, 60% {
-    transform: rotate(-4deg);
-  }
-  30%, 50%, 70% {
-    transform: rotate(4deg);
-  }
-  80% {
-    transform: rotate(-2deg);
-  }
-  90% {
-    transform: rotate(2deg);
-  }
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #010714;
-}
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  max-width: 1176px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
 .text {
   color: rgba(255, 255, 255, 0.7);
